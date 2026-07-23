@@ -4,5 +4,16 @@
   ],
   "enabledManagers": [
     "github-actions"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["container"],
+      "enabled": true
+    }
   ]
 }
