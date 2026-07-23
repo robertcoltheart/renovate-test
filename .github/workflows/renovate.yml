@@ -19,4 +19,5 @@ jobs:
           configurationFile: .github/renovate.json
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
+          RENOVATE_DEPENDENCY_DASHBOARD: false
           LOG_LEVEL: debug
