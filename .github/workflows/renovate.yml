@@ -3,6 +3,9 @@ name: Renovate
 on:
   workflow_dispatch
 
+permissions:
+  issues: write
+
 jobs:
   renovate:
     name: Renovate
@@ -19,5 +22,4 @@ jobs:
           configurationFile: .github/renovate.json
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
-          RENOVATE_DEPENDENCY_DASHBOARD: false
           LOG_LEVEL: debug
